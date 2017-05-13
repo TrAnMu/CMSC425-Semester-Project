@@ -231,6 +231,11 @@ Prefab:
       propertyPath: m_Radius
       value: 0.28363174
       objectReference: {fileID: 0}
+    - target: {fileID: 135159063516911286, guid: 5b6746e72b244674488472ffdff5bd22,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b6746e72b244674488472ffdff5bd22, type: 2}
   m_IsPrefabParent: 0
@@ -289,6 +294,11 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 0.27493322
+      objectReference: {fileID: 0}
+    - target: {fileID: 135848287762200976, guid: 2ddfd34faa7261a418cea4175db4387c,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ddfd34faa7261a418cea4175db4387c, type: 2}
@@ -391,6 +401,11 @@ Prefab:
       propertyPath: m_Radius
       value: 0.2634711
       objectReference: {fileID: 0}
+    - target: {fileID: 135294953500982264, guid: 2fa4590b11347dc4eb6188b6860e891c,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fa4590b11347dc4eb6188b6860e891c, type: 2}
   m_IsPrefabParent: 0
@@ -450,9 +465,30 @@ Prefab:
       propertyPath: m_Radius
       value: 0.27295575
       objectReference: {fileID: 0}
+    - target: {fileID: 135192127354914158, guid: 52e230cf0ac735746b4d03c2eb4f6a91,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52e230cf0ac735746b4d03c2eb4f6a91, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1620526337 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1388471185903980, guid: 6489a483c0a5d304eb91c99cc9511216,
+    type: 2}
+  m_PrefabInternal: {fileID: 2022029020}
+--- !u!114 &1620526341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1620526337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2704f29ffadeb408e9f432cef84cff4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1762986282
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +607,11 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 0.28489375
+      objectReference: {fileID: 0}
+    - target: {fileID: 135336859619647390, guid: 7512cc8b21de44c448f510fe6dbbeb83,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7512cc8b21de44c448f510fe6dbbeb83, type: 2}
@@ -741,6 +782,21 @@ Prefab:
     - target: {fileID: 4616370971002034, guid: 6489a483c0a5d304eb91c99cc9511216, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 82811214413435586, guid: 6489a483c0a5d304eb91c99cc9511216,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82811214413435586, guid: 6489a483c0a5d304eb91c99cc9511216,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82811214413435586, guid: 6489a483c0a5d304eb91c99cc9511216,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6489a483c0a5d304eb91c99cc9511216, type: 2}
