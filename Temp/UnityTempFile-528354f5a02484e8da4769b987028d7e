@@ -78,6 +78,7 @@
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
 'Assets/Scripts/AudioAnalyzer.cs'
+'Assets/Scripts/AudioRunner.cs'
 'Assets/Scripts/CreateVisualData.cs'
 'Assets/Scripts/NoteController.cs'
 'Assets/Scripts/NoteDetector.cs'

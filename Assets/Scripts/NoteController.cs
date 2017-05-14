@@ -10,16 +10,19 @@ public class NoteController : MonoBehaviour {
     public Transform yellowNote;
     public Transform orangeNote;
     private Transform objectToCreate;
-
+	private float waitTime;
     private bool resetTimer = true;
-    public float posX;
+    private float posX;
 
-    List<float> testNotes = new List<float>() { 1, 5, 3, 4, 2, 5, 2, 1, 2, 3, 5, 5, 4, 5, 5, 1, 2, 4, 1, 1, 4, 3 };
+	List<float> noteChart = new List<float>() { 5, 0, 5, 0, 0, 5, 5, 5, 
+		3, 0, 3, 0, 0, 3, 3, 3, 
+		1, 0, 1, 0, 0, 1, 1, 1, 
+		0, 1, 2, 2, 3, 3, 4, 4 };
     public int notePos = 0;
 
 	// Use this for initialization
 	void Start () {
-		
+		waitTime = (calculateWait (bpm)/ 2.0F) - .06F;
 	}
 	
 	// Update is called once per frame
@@ -32,36 +35,39 @@ public class NoteController : MonoBehaviour {
 		
 	}
 
+	float calculateWait(float bpm) {
+		float bps = 60.0F/bpm;
+
+		return bps;
+	}
+
     IEnumerator createNote() {
-        yield return new WaitForSeconds(1.0F);
+		yield return new WaitForSeconds(waitTime);
 
-        if(testNotes[notePos] == 1) {
-            posX = -1.35f;
-            objectToCreate = greenNote;
-        } 
-
-		if(testNotes[notePos] == 2) {
-            posX = -0.65f;
-            objectToCreate = redNote;
-        } 
-
-		if(testNotes[notePos] == 3) {
-            posX = 0f;
-            objectToCreate = yellowNote;
-        } 
-
-		if(testNotes[notePos] == 4) {
-            posX = 0.7f;
-            objectToCreate = blueNote;
-        } 
-
-		if(testNotes[notePos] == 5) {
-            posX = 1.4f;
-            objectToCreate = orangeNote;
-        }
+		if (noteChart [notePos] == 1) {
+			posX = -1.35f;
+			objectToCreate = greenNote;
+		} else if (noteChart [notePos] == 2) {
+			posX = -0.65f;
+			objectToCreate = redNote;
+		} else if (noteChart [notePos] == 3) {
+			posX = 0f;
+			objectToCreate = yellowNote;
+		} else if (noteChart [notePos] == 4) {
+			posX = 0.7f;
+			objectToCreate = blueNote;
+		} else if (noteChart [notePos] == 5) {
+			posX = 1.4f;
+			objectToCreate = orangeNote;
+		} else {
+			objectToCreate = null;
+		}
 
         notePos++;
         resetTimer = true;
-        Instantiate(objectToCreate, new Vector3(posX, 2.55f, 3.28f), objectToCreate.rotation);
+
+		if (objectToCreate != null) {
+			Instantiate (objectToCreate, new Vector3 (posX, 2.55f, 3.28f), objectToCreate.rotation);
+		}
     }
 }

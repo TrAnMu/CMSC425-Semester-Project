@@ -7,8 +7,10 @@ public class AudioRunner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		int layer = LayerMask.NameToLayer ("Notes");
+		Physics.IgnoreLayerCollision (layer, layer, true);
 		track = GetComponent<AudioSource> ();
-		track.PlayDelayed (5.40F);
+		track.PlayDelayed (5.15F);
 	}
 	
 	// Update is called once per frame

@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 23377882854291886}
   - component: {fileID: 54553784025119262}
   - component: {fileID: 114333610978608704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blue Note
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

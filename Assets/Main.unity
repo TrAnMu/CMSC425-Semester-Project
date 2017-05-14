@@ -166,14 +166,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c859c7f68892f6e4d85e00ca8f867b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bpm: 180
   redNote: {fileID: 4960126772626074, guid: 72296b58eb302b3459da6637d779e645, type: 2}
   blueNote: {fileID: 4336016438156284, guid: ca185d9563d3a8e46af93b7bec9a23c1, type: 2}
   greenNote: {fileID: 4199590430538462, guid: 68e3bba55c5ba144cbd49d141e301e0c, type: 2}
   yellowNote: {fileID: 4238548865687634, guid: ff51265d9e72d7346b3737392bbfb15f, type: 2}
   orangeNote: {fileID: 4618341480943614, guid: 34c98df6b71477a42ae76e2b892c4127, type: 2}
-  objectToCreate: {fileID: 0}
-  resetTimer: 1
-  posX: 0
   notePos: 0
 --- !u!1001 &915093647
 Prefab:
@@ -229,7 +227,7 @@ Prefab:
     - target: {fileID: 135159063516911286, guid: 5b6746e72b244674488472ffdff5bd22,
         type: 2}
       propertyPath: m_Radius
-      value: 0.28363174
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 135159063516911286, guid: 5b6746e72b244674488472ffdff5bd22,
         type: 2}
@@ -293,7 +291,7 @@ Prefab:
     - target: {fileID: 135848287762200976, guid: 2ddfd34faa7261a418cea4175db4387c,
         type: 2}
       propertyPath: m_Radius
-      value: 0.27493322
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 135848287762200976, guid: 2ddfd34faa7261a418cea4175db4387c,
         type: 2}
@@ -399,7 +397,7 @@ Prefab:
     - target: {fileID: 135294953500982264, guid: 2fa4590b11347dc4eb6188b6860e891c,
         type: 2}
       propertyPath: m_Radius
-      value: 0.2634711
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 135294953500982264, guid: 2fa4590b11347dc4eb6188b6860e891c,
         type: 2}
@@ -463,7 +461,7 @@ Prefab:
     - target: {fileID: 135192127354914158, guid: 52e230cf0ac735746b4d03c2eb4f6a91,
         type: 2}
       propertyPath: m_Radius
-      value: 0.27295575
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 135192127354914158, guid: 52e230cf0ac735746b4d03c2eb4f6a91,
         type: 2}
@@ -606,7 +604,7 @@ Prefab:
     - target: {fileID: 135336859619647390, guid: 7512cc8b21de44c448f510fe6dbbeb83,
         type: 2}
       propertyPath: m_Radius
-      value: 0.28489375
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 135336859619647390, guid: 7512cc8b21de44c448f510fe6dbbeb83,
         type: 2}
@@ -798,6 +796,11 @@ Prefab:
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82811214413435586, guid: 6489a483c0a5d304eb91c99cc9511216,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dc2d8a9a096021747907f6b2c80d878b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6489a483c0a5d304eb91c99cc9511216, type: 2}
   m_IsPrefabParent: 0
