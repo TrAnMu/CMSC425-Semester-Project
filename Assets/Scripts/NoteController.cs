@@ -79,7 +79,7 @@ public class NoteController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		waitTime = (calculateBps (bpm)/ 2.0F) - 0.0509F /*- .05775F*/; // Up for faster, down for slower.
+		waitTime = (calculateBps (bpm)/ 2.0F) - 0.05092F /*- .05775F*/; // Up for faster, down for slower.
 	}
 	
 	// Update is called once per frame
