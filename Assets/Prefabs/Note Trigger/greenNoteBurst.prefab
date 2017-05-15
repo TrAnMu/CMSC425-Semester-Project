@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4918899397096530}
   - component: {fileID: 198309500209468718}
   - component: {fileID: 199976660916087652}
+  - component: {fileID: 114952122507194420}
   m_Layer: 0
   m_Name: greenNoteBurst
   m_TagString: Untagged
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114952122507194420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346631374759740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463e7ec71bd9b47f6a65e199af416823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198309500209468718
 ParticleSystem:
   m_ObjectHideFlags: 1
