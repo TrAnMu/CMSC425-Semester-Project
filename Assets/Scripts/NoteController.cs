@@ -75,11 +75,30 @@ public class NoteController : MonoBehaviour {
 		5, 5, 5, 5, 5, 4, 3, 4,
 		0, 4, 0, 4, 4, 3, 2, 2,
 		0, 2, 0, 2, 2, 2, 2, 2,
-		0, 2, 0, 2, 2, 2, 2, 2};
+		0, 2, 0, 2, 2, 2, 2, 2,
+		5, 5, 5, 5, 5, 4, 3, 4,
+		0, 4, 0, 4, 0, 3, 2, 2,
+		2, 2, 2, 2, 2, 2, 2, 5,
+		0, 5, 0, 4, 0, 5, 0, 0,
+		5, 5, 5, 5, 5, 4, 3, 4,
+		0, 4, 0, 4, 0, 3, 2, 2,
+		2, 2, 2, 2, 2, 2, 2, 5,
+		0, 5, 0, 4, 0, 5, 0, 0,
+		5, 5, 5, 5, 5, 4, 3, 4,
+		0, 4, 0, 4, 0, 3, 2, 2,
+		2, 2, 2, 2, 2, 2, 2, 5,
+		0, 5, 0, 4, 0, 5, 0, 0,
+		5, 5, 5, 5, 5, 4, 3, 4,
+		0, 4, 0, 4, 0, 3, 2, 2,
+		2, 2, 2, 2, 2, 2, 2, 5,
+		0, 5, 0, 4, 0, 5, 0, 0,
+		5, 5, 5, 5, 5, 4, 3, 4,
+		0, 4, 0, 4, 0, 3, 2, 2,
+		0, 2, 3, 3, 4, 4, 5, 5};
 
 	// Use this for initialization
 	void Start () {
-		waitTime = (calculateBps (bpm)/ 2.0F) - 0.05092F /*- .05775F*/; // Up for faster, down for slower.
+		waitTime = (calculateBps (bpm)/ 2.0F) - 0.05095F; // Up for faster, down for slower. The finest of adjustments!
 	}
 	
 	// Update is called once per frame
