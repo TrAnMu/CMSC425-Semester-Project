@@ -35,36 +35,34 @@ public class NoteController : MonoBehaviour {
     IEnumerator createNote()
     {
         yield return new WaitForSeconds(1);
-        if (notePos < testNotes.Count)
+
+        if(testNotes[notePos] == 1)
         {
-            if (testNotes[notePos] == 1)
-            {
-                posX = -1.35f;
-                objectToCreate = greenNote;
-            }
-            if (testNotes[notePos] == 2)
-            {
-                posX = -0.65f;
-                objectToCreate = redNote;
-            }
-            if (testNotes[notePos] == 3)
-            {
-                posX = 0f;
-                objectToCreate = yellowNote;
-            }
-            if (testNotes[notePos] == 4)
-            {
-                posX = 0.7f;
-                objectToCreate = blueNote;
-            }
-            if (testNotes[notePos] == 5)
-            {
-                posX = 1.4f;
-                objectToCreate = orangeNote;
-            }
-            notePos++;
-            resetTimer = true;
-            Instantiate(objectToCreate, new Vector3(posX, 2.55f, 3.28f), objectToCreate.rotation);
+            posX = -1.35f;
+            objectToCreate = greenNote;
         }
+        if(testNotes[notePos] == 2)
+        {
+            posX = -0.65f;
+            objectToCreate = redNote;
+        }
+        if(testNotes[notePos] == 3)
+        {
+            posX = 0f;
+            objectToCreate = yellowNote;
+        }
+        if(testNotes[notePos] == 4)
+        {
+            posX = 0.7f;
+            objectToCreate = blueNote;
+        }
+        if(testNotes[notePos] == 5)
+        {
+            posX = 1.4f;
+            objectToCreate = orangeNote;
+        }
+        notePos++;
+        resetTimer = true;
+        Instantiate(objectToCreate, new Vector3(posX, 2.55f, 3.28f), objectToCreate.rotation);
     }
 }

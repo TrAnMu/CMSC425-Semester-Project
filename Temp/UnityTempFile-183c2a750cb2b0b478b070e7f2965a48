@@ -78,10 +78,8 @@
 -define:UNITY_EDITOR_WIN
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-Assets/NeonShapes/SelfDestroyScript.cs
 Assets/Scripts/AudioAnalyzer.cs
 Assets/Scripts/CreateVisualData.cs
-Assets/Scripts/LargeVisualizer.cs
 Assets/Scripts/NoteController.cs
 Assets/Scripts/NoteDetector.cs
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
