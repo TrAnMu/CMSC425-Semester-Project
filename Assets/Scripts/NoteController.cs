@@ -164,9 +164,6 @@ public class NoteController : MonoBehaviour {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> master
-=======
 >>>>>>> master
 =======
 >>>>>>> master
