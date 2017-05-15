@@ -162,9 +162,6 @@ public class NoteController : MonoBehaviour {
             resetTimer = true;
             Instantiate(objectToCreate, new Vector3(posX, 2.55f, 3.28f), objectToCreate.rotation);
         }
-<<<<<<< HEAD
->>>>>>> master
-=======
 >>>>>>> master
     }
 }
