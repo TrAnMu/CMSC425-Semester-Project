@@ -1222,7 +1222,6 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
 <<<<<<< HEAD
-<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 82811214413435586, guid: 6489a483c0a5d304eb91c99cc9511216,
         type: 2}
@@ -1233,8 +1232,6 @@ Prefab:
         type: 2}
       propertyPath: Loop
       value: 0
-=======
->>>>>>> master
 =======
 >>>>>>> master
       objectReference: {fileID: 0}
