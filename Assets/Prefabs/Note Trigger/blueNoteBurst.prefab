@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4846285175103748}
   - component: {fileID: 198946550787536000}
   - component: {fileID: 199413681632170046}
-  - component: {fileID: 114477369853283020}
   m_Layer: 0
   m_Name: blueNoteBurst
   m_TagString: Untagged
@@ -42,17 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114477369853283020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1602135505849678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 463e7ec71bd9b47f6a65e199af416823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &198946550787536000
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -60,7 +48,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1602135505849678}
   serializedVersion: 5
-  lengthInSec: 0.1
+  lengthInSec: 0.5
   simulationSpeed: 1
   looping: 0
   prewarm: 0
