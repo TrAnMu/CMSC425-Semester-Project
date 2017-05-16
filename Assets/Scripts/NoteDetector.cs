@@ -22,35 +22,44 @@ public class NoteDetector : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.name == "FailBox")
-        {
+	void OnTriggerStay(Collider other) {
+        if (other.gameObject.name == "FailBox") {
             Destroy(gameObject);
             Instantiate(blackBurst, transform.position, blackBurst.rotation);
             
-        } if(other.gameObject.name == "greenTrigger")
-        {
+        } 
+
+		if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.H)) 
+			&& this.gameObject.CompareTag("Green") 
+			&& other.gameObject.name == "greenTrigger") {
             Destroy(gameObject);
             Instantiate(greenBurst, transform.position, greenBurst.rotation);
         }
-         if (other.gameObject.name == "redTrigger")
-        {
+         
+		if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.J)) 
+			&& this.gameObject.CompareTag("Red") 
+			&& other.gameObject.name == "redTrigger") {
             Destroy(gameObject);
             Instantiate(redBurst, transform.position, redBurst.rotation);
         }
-        if (other.gameObject.name == "yellowTrigger")
-        {
+
+		if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.K)) 
+			&& this.gameObject.CompareTag("Yellow") 
+			&& other.gameObject.name == "yellowTrigger") {
             Destroy(gameObject);
             Instantiate(yellowBurst, transform.position, yellowBurst.rotation);
         }
-        if (other.gameObject.name == "blueTrigger")
-        {
+
+		if ((Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.L)) 
+			&& this.gameObject.CompareTag("Blue") 
+			&& other.gameObject.name == "blueTrigger") {
             Destroy(gameObject);
             Instantiate(blueBurst, transform.position, blueBurst.rotation);
         }
-        if (other.gameObject.name == "orangeTrigger")
-        {
+
+		if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Semicolon)) 
+			&& this.gameObject.CompareTag("Orange") 
+			&& other.gameObject.name == "orangeTrigger") {
             Destroy(gameObject);
             Instantiate(orangeBurst, transform.position, orangeBurst.rotation);
         }
