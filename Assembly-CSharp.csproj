@@ -50,8 +50,11 @@
      <Compile Include="Assets\Scripts\AudioAnalyzer.cs" />
      <Compile Include="Assets\Scripts\AudioRunner.cs" />
      <Compile Include="Assets\Scripts\CreateVisualData.cs" />
+     <Compile Include="Assets\Scripts\EndScreen.cs" />
+     <Compile Include="Assets\Scripts\MouseHover.cs" />
      <Compile Include="Assets\Scripts\NoteController.cs" />
      <Compile Include="Assets\Scripts\NoteDetector.cs" />
+     <Compile Include="Assets\Scripts\StartMenu.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>

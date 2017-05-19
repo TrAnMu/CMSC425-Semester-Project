@@ -42,7 +42,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -71,7 +71,8 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000001, guid: 77cb35bfe58c3432f94d683c8a6e464f,
+    type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -172,7 +173,6 @@ MonoBehaviour:
   greenNote: {fileID: 4199590430538462, guid: 68e3bba55c5ba144cbd49d141e301e0c, type: 2}
   yellowNote: {fileID: 4238548865687634, guid: ff51265d9e72d7346b3737392bbfb15f, type: 2}
   orangeNote: {fileID: 4618341480943614, guid: 34c98df6b71477a42ae76e2b892c4127, type: 2}
-  notePos: 0
 --- !u!1001 &915093647
 Prefab:
   m_ObjectHideFlags: 0
