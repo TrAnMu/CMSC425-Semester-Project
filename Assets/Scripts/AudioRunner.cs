@@ -15,6 +15,8 @@ public class AudioRunner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (!track.isPlaying) {
+			UnityEngine.SceneManagement.SceneManager.LoadScene ("EndScreen");
+		}
 	}
 }
