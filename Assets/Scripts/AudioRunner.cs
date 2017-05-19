@@ -10,7 +10,7 @@ public class AudioRunner : MonoBehaviour {
 		int layer = LayerMask.NameToLayer ("Notes");
 		Physics.IgnoreLayerCollision (layer, layer, true);
 		track = GetComponent<AudioSource> ();
-		track.PlayDelayed (5.15F);
+		track.PlayDelayed (4.9F);
 	}
 	
 	// Update is called once per frame
