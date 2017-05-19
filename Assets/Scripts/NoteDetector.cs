@@ -22,16 +22,14 @@ public class NoteDetector : MonoBehaviour {
 	void Start () {
 		noteScript = GameObject.Find("Board").GetComponent<NoteController>();
 
-
 	}
 
 	// Update is called once per frame
 	void Update () {
-
+		PlayerPrefs.SetInt ("score", score);
 	}
 
-	void updateMultiplier()
-	{
+	void updateMultiplier() {
 		streak += 1;
 		if(streak == 6 || streak == 12 || streak == 18)
 		{
@@ -39,13 +37,11 @@ public class NoteDetector : MonoBehaviour {
 		}
 	}
 
-	void addScore()
-	{
+	void addScore() {
 		score = score + (multiplier * 25);
 	}
 
-	void resetMultiplier()
-	{
+	void resetMultiplier() {
 		streak = 0;
 		multiplier = 1;
 	}
@@ -56,7 +52,7 @@ public class NoteDetector : MonoBehaviour {
 			Destroy(gameObject);
 			Instantiate(blackBurst, transform.position, blackBurst.rotation);
 			resetMultiplier();
-			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString() + streak;
+			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
 
 		} 
 
@@ -67,7 +63,7 @@ public class NoteDetector : MonoBehaviour {
 			Instantiate(greenBurst, transform.position, greenBurst.rotation);
 			updateMultiplier();
 			addScore();
-			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString()+ streak;
+			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
 
 		}
 
@@ -78,7 +74,7 @@ public class NoteDetector : MonoBehaviour {
 			Instantiate(redBurst, transform.position, redBurst.rotation);
 			updateMultiplier();
 			addScore();
-			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString()+ streak;
+			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
 		}
 
 		else if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.K)) 
@@ -88,7 +84,7 @@ public class NoteDetector : MonoBehaviour {
 			Instantiate(yellowBurst, transform.position, yellowBurst.rotation);
 			updateMultiplier();
 			addScore();
-			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString()+ streak;
+			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
 		}
 
 		else if ((Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.L)) 
@@ -98,7 +94,7 @@ public class NoteDetector : MonoBehaviour {
 			Instantiate(blueBurst, transform.position, blueBurst.rotation);
 			updateMultiplier();
 			addScore();
-			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString()+ streak;
+			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
 		}
 
 		else if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Semicolon)) 
@@ -108,9 +104,8 @@ public class NoteDetector : MonoBehaviour {
 			Instantiate(orangeBurst, transform.position, orangeBurst.rotation);
 			updateMultiplier();
 			addScore();
-			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString()+ streak;
-		} else
-		{
+			noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
+		} else {
 			updateMultiplier();
 		}
 	}
