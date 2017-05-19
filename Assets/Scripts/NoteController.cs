@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class NoteController : MonoBehaviour {
@@ -14,9 +15,10 @@ public class NoteController : MonoBehaviour {
     private bool resetTimer = true;
     private float posX;
 	private int notePos = 0;
+    public Text scoreText;
 
-	//0, 0, 0, 0, 0, 0, 0, 0
-	List<int> noteChart = new List<int>() { 5, 0, 5, 0, 0, 5, 5, 5, 
+    //0, 0, 0, 0, 0, 0, 0, 0
+    List<int> noteChart = new List<int>() { 5, 0, 5, 0, 0, 5, 5, 5, 
 		3, 0, 3, 0, 0, 3, 3, 3, 
 		1, 0, 1, 0, 0, 1, 1, 1, 
 		0, 1, 2, 2, 3, 3, 4, 4, 
@@ -99,6 +101,7 @@ public class NoteController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		waitTime = (calculateBps (bpm)/ 2.0F) - 0.05095F; // Up for faster, down for slower. The finest of adjustments!
+  
 	}
 	
 	// Update is called once per frame
@@ -116,6 +119,7 @@ public class NoteController : MonoBehaviour {
 
 		return bps;
 	}
+
 
     IEnumerator createNote() {
 		yield return new WaitForSeconds(waitTime);
