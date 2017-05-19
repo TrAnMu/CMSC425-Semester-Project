@@ -12,17 +12,14 @@ public class NoteDetector : MonoBehaviour {
     public Transform yellowBurst;
     public Transform orangeBurst;
     public Transform blackBurst;
-    private static int score;
-    private static int streak;
-    private static int multiplier;
+    private static int score = 0;
+    private static int streak = 0;
+    private static int multiplier = 1;
     public static NoteController noteScript;
    
 
 	// Use this for initialization
 	void Start () {
-        score = 0;
-        streak = 0;
-        multiplier = 1;
         noteScript = GameObject.Find("Board").GetComponent<NoteController>();
 
 
@@ -63,7 +60,7 @@ public class NoteDetector : MonoBehaviour {
 
         } 
 
-		if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.H)) 
+		 else if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.H)) 
 			&& this.gameObject.CompareTag("Green") 
 			&& other.gameObject.name == "greenTrigger") {
             Destroy(gameObject);
@@ -74,7 +71,7 @@ public class NoteDetector : MonoBehaviour {
 
         }
          
-		if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.J)) 
+		else if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.J)) 
 			&& this.gameObject.CompareTag("Red") 
 			&& other.gameObject.name == "redTrigger") {
             Destroy(gameObject);
@@ -84,7 +81,7 @@ public class NoteDetector : MonoBehaviour {
             noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
         }
 
-		if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.K)) 
+		else if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.K)) 
 			&& this.gameObject.CompareTag("Yellow") 
 			&& other.gameObject.name == "yellowTrigger") {
             Destroy(gameObject);
@@ -94,7 +91,7 @@ public class NoteDetector : MonoBehaviour {
             noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
         }
 
-		if ((Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.L)) 
+		else if ((Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.L)) 
 			&& this.gameObject.CompareTag("Blue") 
 			&& other.gameObject.name == "blueTrigger") {
             Destroy(gameObject);
@@ -104,7 +101,7 @@ public class NoteDetector : MonoBehaviour {
             noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
         }
 
-		if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Semicolon)) 
+		else if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Semicolon)) 
 			&& this.gameObject.CompareTag("Orange") 
 			&& other.gameObject.name == "orangeTrigger") {
             Destroy(gameObject);
@@ -112,6 +109,9 @@ public class NoteDetector : MonoBehaviour {
             updateMultiplier();
             addScore();
             noteScript.scoreText.text = "x" + multiplier.ToString() + "   " + score.ToString();
+        } else
+        {
+            updateMultiplier();
         }
     }
 }
