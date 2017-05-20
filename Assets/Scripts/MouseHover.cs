@@ -13,14 +13,14 @@ public class MouseHover : MonoBehaviour {
 		text.color = idle;
 	}
 
-	void Update() {
-		RaycastHit hit = new RaycastHit();
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-		if (Physics.Raycast(ray, out hit)) {
-			Debug.Log(hit.collider.name+", "+hit.collider.tag);
-		}
-	}
+//	void Update() {
+//		RaycastHit hit = new RaycastHit();
+//		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+//
+//		if (Physics.Raycast(ray, out hit)) {
+//			Debug.Log(hit.collider.name+", "+hit.collider.tag);
+//		}
+//	}
 
 	void OnMouseEnter() {
 		text.color = Color.cyan;

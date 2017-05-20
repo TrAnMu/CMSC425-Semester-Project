@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bdd3e291d4296cd4bb7ff4fc19810aea
+timeCreated: 1495217295
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fierce Brosnan
+  fontNames:
+  - Fierce Brosnan
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

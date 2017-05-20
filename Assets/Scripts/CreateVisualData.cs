@@ -16,7 +16,7 @@ public class CreateVisualData : MonoBehaviour {
             cubeInstance.transform.parent = this.transform;
             cubeInstance.name = "Cube" + i;
             this.transform.eulerAngles = new Vector3(0, -0.703125f * i, 0);
-            cubeInstance.transform.position = Vector3.forward * 100;
+			cubeInstance.transform.position = Vector3.left * 100;
             cubes[i] = cubeInstance;
         }
 		

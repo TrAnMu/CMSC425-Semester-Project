@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NoteController : MonoBehaviour {
 	public float bpm;
@@ -14,6 +15,7 @@ public class NoteController : MonoBehaviour {
     private bool resetTimer = true;
     private float posX;
 	private int notePos = 0;
+	public Text scoreText;
 
 	//0, 0, 0, 0, 0, 0, 0, 0
 	List<int> noteChart = new List<int>() { 5, 0, 5, 0, 0, 5, 5, 5, 
